@@ -21,6 +21,22 @@ body {
             font-family: $nameFont;
             font-size: 5rem;
             margin-bottom: .25rem;
+            letter-spacing: .2rem;
+        }
+    }
+
+    .reservation__container {
+        display: block;
+        position: relative;
+        top: 5%;
+        left: 80%;
+        width: 150px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            border: solid black 1px;
+            padding: .5rem 1rem;
         }
     }
 }
