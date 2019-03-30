@@ -12,14 +12,18 @@ body {
     padding: 0;
     display: block;
     position: absolute;
-    left: 70vw;
-    top: 80vh;
-    color: white; }
+    left: 75vw;
+    top: 40vh;
+    color: #da560a; }
     body .restaurant__name__container .restaurant__name {
       font-family: "Italiana", serif;
-      font-size: 5rem;
+      font-size: 8rem;
       margin-bottom: .25rem;
       letter-spacing: .2rem; }
+      body .restaurant__name__container .restaurant__name__description {
+        text-align: center;
+        letter-spacing: .2rem;
+        font-size: 2rem; }
   body .reservation__container {
     display: block;
     position: relative;
