@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    background: border-box url("../images/cathal-mac-an-bheatha-222577-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: $mainFont;
+
+    .restaurant__name__container {
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        left: 75vw;
+        top: 40vh;
+        color: #da560a;
+        
+        .restaurant__name {
+            font-family: $nameFont;
+            font-size: 8rem;
+            margin-bottom: .25rem;
+            letter-spacing: .2rem;
+
+            &__description {
+                text-align: center;
+                letter-spacing: .2rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .reservation__container {
+        display: block;
+        position: relative;
+        top: 5%;
+        left: 80%;
+        width: 150px;
+
+        &__button {
+            text-decoration: none;
+            color: black;
+            border: solid black 1px;
+            padding: .5rem 1rem;
+        }
+    }
+}
