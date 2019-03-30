@@ -5,21 +5,25 @@ $mainFont: 'Raleway', sans-serif;
 //color variables
 $navBar: #746b65;
 
+@import "_body";
 @import "_nav";
 @import "scss/fontawesome.scss";
 @import "scss/brands.scss";
 @import "scss/solid.scss";
 
 body {
-    font-family: $mainFont;
+    background: none;
+
+    .reservation__container {
+        top: -88.6vh;
+    }
 }
 
 .menu {
-    position: relative;
-    top: 0;
-    left: 40%;
     width: 40vw;
     text-align: center;
+    margin: 0 auto;
+    
     &__container {
         display: flex;
         flex-direction: column;

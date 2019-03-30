@@ -1,3 +1,37 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  background: border-box url("../images/cathal-mac-an-bheatha-222577-unsplash.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Raleway", sans-serif; }
+  body .restaurant__name__container {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    left: 70vw;
+    top: 80vh;
+    color: white; }
+    body .restaurant__name__container .restaurant__name {
+      font-family: "Italiana", serif;
+      font-size: 5rem;
+      margin-bottom: .25rem;
+      letter-spacing: .2rem; }
+  body .reservation__container {
+    display: block;
+    position: relative;
+    top: 5%;
+    left: 80%;
+    width: 150px; }
+    body .reservation__container__button {
+      text-decoration: none;
+      color: black;
+      border: solid black 1px;
+      padding: .5rem 1rem; }
+
 header .nav {
   position: fixed;
   background-color: #746b65;
@@ -53,6 +87,7 @@ header .navbar {
     color: white;
     cursor: pointer; }
     header .navbar .nav__expander.open {
+      visibility: hidden;
       opacity: 0;
       position: fixed;
       top: 1%;
@@ -4370,14 +4405,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 body {
-  font-family: "Raleway", sans-serif; }
+  background: none; }
+  body .reservation__container {
+    top: -88.6vh; }
 
 .menu {
-  position: relative;
-  top: 0;
-  left: 40%;
   width: 40vw;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   .menu__container {
     display: flex;
     flex-direction: column;

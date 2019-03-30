@@ -12,6 +12,7 @@ const closeNav = () => {
     navbar.style.transition = "left 1s";
     nav__open.style.opacity = "1";
     nav__open.style.transition = "opacity 1.2s ease-in 1s";
+    nav__open.style.visibility = "visible";
 };
 
 const openNav = () => {
@@ -19,6 +20,7 @@ const openNav = () => {
     navbar.style.transition = "left 1s";
     nav__open.style.opacity = "0";
     nav__open.style.transition = "opacity .1s";
+    nav__open.style.visibility = "hidden";
 };
 
 //event listener
