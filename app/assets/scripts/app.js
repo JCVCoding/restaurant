@@ -23,13 +23,39 @@ const openNav = () => {
     nav__open.style.visibility = "hidden";
 };
 
+//for mobile view
+
+const closeNavMobile = () => {
+  navbar.style.left = "-14rem";
+  navbar.style.transition = "left 1s";
+  nav__open.style.opacity = "1";
+  nav__open.style.transition = "opacity .8s ease-in .6s";
+  nav__open.style.visibility = "visible";
+};
+
+const openNavMobile = () => {
+  navbar.style.left = "0px";
+  navbar.style.transition = "left 1s";
+  nav__open.style.opacity = "0";
+  nav__open.style.transition = "opacity .1s";
+  nav__open.style.visibility = "hidden";
+};
+
 //event listener
 nav__close.addEventListener("click", () => {
-  closeNav();
+  if (window.matchMedia("(max-width: 420px)").matches) {
+    closeNavMobile();
+  } else {
+    closeNav();
+  }
 });
 
 nav__open.addEventListener("click", () => {
-  openNav();
+  if (window.matchMedia("(max-width: 420px)").matches) {
+  openNavMobile();
+  } else {
+    openNav();
+  }
 });
 
 
@@ -47,17 +73,19 @@ const reservationEffectIn = () => {
 }
 
 const reservationEffectOut = () => {
-  reservationBtn.style.backgroundColor = "transparent";
-  reservationBtn.style.color = "inherit";
+  reservationBtn.style.backgroundColor = "black";
+  reservationBtn.style.border = "solid black 1px";
+  reservationBtn.style.color = "white";
   reservationBtn.style.transition = "background-color 1s, color 1s";
 }
 
 //event listener
+if (window.matchMedia("(min-width: 421px)").matches) {
+  reservationBtn.addEventListener("mouseenter", () => {
+    reservationEffectIn();
+  });
 
-reservationBtn.addEventListener("mouseenter", () => {
-  reservationEffectIn();
-});
-
-reservationBtn.addEventListener("mouseleave", () => {
-  reservationEffectOut();
-});
+  reservationBtn.addEventListener("mouseleave", () => {
+    reservationEffectOut();
+  });
+}

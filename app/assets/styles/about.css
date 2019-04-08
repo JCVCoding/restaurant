@@ -9,16 +9,17 @@ body {
   font-family: "Raleway", sans-serif; }
   body .restaurant__name__container {
     margin: 0;
-    padding: 0;
+    padding: 1rem 1rem;
     display: block;
     position: absolute;
     left: 75vw;
     top: 40vh;
-    color: #da560a; }
+    color: #da560a;
+    background: rgba(255, 255, 255, 0.7); }
     body .restaurant__name__container .restaurant__name {
       font-family: "Italiana", serif;
       font-size: 8rem;
-      margin-bottom: .25rem;
+      margin: .25rem;
       letter-spacing: .2rem; }
       body .restaurant__name__container .restaurant__name__description {
         text-align: center;
@@ -32,9 +33,39 @@ body {
     width: 150px; }
     body .reservation__container__button {
       text-decoration: none;
-      color: black;
-      border: solid black 1px;
+      color: white;
+      background: black;
+      border: 1px solid black;
       padding: .5rem 1rem; }
+  @media (max-width: 1280px) {
+    body .restaurant__name__container {
+      left: 40vw; }
+      body .restaurant__name__container .restaurant__name {
+        font-size: 6rem;
+        text-align: center; }
+        body .restaurant__name__container .restaurant__name__description {
+          font-size: 2rem; } }
+  @media (max-width: 768px) {
+    body .restaurant__name__container {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1; }
+      body .restaurant__name__container .restaurant__name {
+        font-size: 6rem;
+        text-align: center; }
+        body .restaurant__name__container .restaurant__name__description {
+          font-size: 2rem; }
+    body .reservation__container {
+      left: 75%; } }
+  @media (max-width: 420px) {
+    body .restaurant__name__container .restaurant__name {
+      font-size: 3rem; }
+      body .restaurant__name__container .restaurant__name__description {
+        font-size: 1rem; }
+    body .reservation__container {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 60%; } }
 
 header .nav {
   position: fixed;
@@ -97,6 +128,15 @@ header .navbar {
       top: 1%;
       left: 5%;
       color: #79473e; }
+
+@media (max-width: 420px) {
+  header .nav {
+    width: 14rem;
+    left: -14rem;
+    z-index: 100; }
+  header .navbar .nav__expander.open {
+    visibility: visible;
+    opacity: 1; } }
 
 /*!
  * Font Awesome Free 5.8.1 by @fontawesome - https://fontawesome.com
@@ -4413,8 +4453,8 @@ body {
 
 .about {
   color: white;
-  max-width: 50vw;
-  max-height: 90vh;
+  width: 50vw;
+  height: 90vh;
   margin: 0 auto; }
   .about__header {
     text-align: center; }
@@ -4433,3 +4473,18 @@ body {
     padding: 1rem; }
     .about__chef .img__container--chef img {
       height: 400px; }
+  @media (max-width: 420px) {
+    .about {
+      width: 80vw; }
+      .about__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; }
+      .about__owner {
+        display: block; }
+        .about__owner img {
+          width: 17rem; }
+      .about__chef {
+        display: block; }
+        .about__chef img {
+          width: 17rem; } }

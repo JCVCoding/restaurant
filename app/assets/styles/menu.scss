@@ -17,6 +17,13 @@ body {
     .reservation__container {
         top: -88.6vh;
     }
+
+    @media (max-width: 420px) {
+        .reservation__container {
+            top: 10%;
+            padding: 4rem 0 4rem 0;
+        }
+    }
 }
 
 .menu {
@@ -86,5 +93,9 @@ body {
                 text-align: left;
             }
         }
+    }
+
+    @media (max-width: 420px) {
+        width: 85vw;
     }
 }

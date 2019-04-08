@@ -17,12 +17,12 @@ body {
 
 .about {
     color: white;
-    max-width: 50vw;
-    max-height: 90vh;
+    width: 50vw;
+    height: 90vh;
     margin: 0 auto;
     
     &__header {
-text-align: center;
+        text-align: center;
     }
 
     .section__space {
@@ -50,6 +50,33 @@ text-align: center;
 
             img {
                 height: 400px;
+            }
+        }
+    }
+
+    @media (max-width: 420px) {
+
+        width: 80vw;
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        &__owner {
+            display: block;
+
+            img {
+                width: 17rem;
+            }
+        }
+
+        &__chef {
+            display: block;
+
+            img {
+                width: 17rem;
             }
         }
     }

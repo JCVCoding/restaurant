@@ -40,6 +40,12 @@ body {
         background-repeat: no-repeat;
         background-attachment: local;
         background-position: center;
+
+        @media(max-width: 420px) {
+            height: 250px;
+            width: auto;
+            background-size: cover;
+        }
     }
 
     .form__container {
@@ -48,10 +54,19 @@ body {
         form {
             display: flex;
             justify-content: center;
+
+            @media (max-width: 420px) {
+                flex-direction: column;
+            }
         }
 
         div {
             padding: .5rem;
+
+            @media (max-width: 420px) {
+                padding: 1rem;
+                align-self: center;
+            }
         }
     }
 }
