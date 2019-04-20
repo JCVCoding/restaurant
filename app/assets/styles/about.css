@@ -80,6 +80,8 @@ header .nav {
     text-decoration: none;
     font: 2.5rem "Italiana", serif;
     letter-spacing: .2rem; }
+  header .nav__logo:hover {
+    color: white; }
   header .nav .logo__container {
     padding: 2rem 0 0 0; }
   header .nav__items {
@@ -93,6 +95,8 @@ header .nav {
       header .nav__items__item a {
         color: black;
         text-decoration: none; }
+      header .nav__items__item a:hover {
+        color: white; }
   header .nav .seperator {
     border-top: black 1px solid;
     width: 175px;
@@ -109,6 +113,9 @@ header #social a {
   color: black;
   text-decoration: none;
   padding: .5rem; }
+
+header #social a:hover {
+  color: white; }
 
 header #hours span {
   letter-spacing: .2rem;
@@ -127,7 +134,7 @@ header .navbar {
       position: fixed;
       top: 1%;
       left: 5%;
-      color: #79473e; }
+      color: #da560a; }
 
 @media (max-width: 420px) {
   header .nav {
@@ -4465,26 +4472,38 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     padding: 1rem; }
-    .about__owner .img__container--owner img {
-      height: 300px; }
+    .about__owner .img__container--owner {
+      padding: 1rem;
+      border: 1px solid white; }
+      .about__owner .img__container--owner img {
+        height: 300px; }
   .about__chef {
     display: flex;
     flex-direction: row-reverse;
     padding: 1rem; }
-    .about__chef .img__container--chef img {
-      height: 400px; }
-  @media (max-width: 420px) {
-    .about {
-      width: 80vw; }
-      .about__container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap; }
-      .about__owner {
-        display: block; }
-        .about__owner img {
-          width: 17rem; }
-      .about__chef {
-        display: block; }
-        .about__chef img {
-          width: 17rem; } }
+    .about__chef .img__container--chef {
+      padding: 1rem;
+      border: 1px solid white; }
+      .about__chef .img__container--chef img {
+        height: 400px; }
+
+@media (max-width: 1720px) {
+  .about {
+    width: 80vw; }
+    .about__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+    .about__owner {
+      display: flex;
+      flex-direction: column; }
+    .about__chef {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+@media (max-width: 480px) {
+  .about__owner .img__container--owner {
+    width: 100%; }
+    .about__owner .img__container--owner img {
+      width: 100%; } }

@@ -16,6 +16,10 @@ header {
             letter-spacing: .2rem;
         }
 
+        &__logo:hover {
+            color: white;
+        }
+
         .logo__container {
             padding: 2rem 0 0 0;
         }
@@ -33,6 +37,10 @@ header {
                 a {
                     color: black;
                     text-decoration: none;
+                }
+
+                a:hover {
+                    color: white;
                 }
             }
         }
@@ -59,6 +67,10 @@ header {
             text-decoration: none;
             padding: .5rem;
         }
+
+        a:hover {
+            color: white;
+        }
     }
 
     #hours {
@@ -84,7 +96,7 @@ header {
                 position: fixed;
                 top: 1%;
                 left: 5%;
-                color: #79473e;
+                color: #da560a;
             }
         }
     }

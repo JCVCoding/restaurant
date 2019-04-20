@@ -35,7 +35,8 @@ body {
         align-items: center;
         padding: 1rem;
         .img__container--owner {
-
+            padding: 1rem;
+            border: 1px solid white;
             img {
                 height: 300px;
             }
@@ -47,36 +48,46 @@ body {
         flex-direction: row-reverse;
         padding: 1rem;
         .img__container--chef {
-
+            padding: 1rem;
+            border: 1px solid white;
             img {
                 height: 400px;
             }
         }
     }
+}
 
-    @media (max-width: 420px) {
-
+@media (max-width: 1720px) {
+    .about {
         width: 80vw;
-        
+
         &__container {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
         }
-
+    
         &__owner {
-            display: block;
-
-            img {
-                width: 17rem;
-            }
+            display: flex;
+            flex-direction: column;
         }
-
+    
         &__chef {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
 
-            img {
-                width: 17rem;
+@media (max-width: 480px){
+    .about {
+        &__owner {
+            .img__container--owner {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
             }
         }
     }

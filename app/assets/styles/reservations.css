@@ -11,6 +11,8 @@ header .nav {
     text-decoration: none;
     font: 2.5rem "Italiana", serif;
     letter-spacing: .2rem; }
+  header .nav__logo:hover {
+    color: white; }
   header .nav .logo__container {
     padding: 2rem 0 0 0; }
   header .nav__items {
@@ -24,6 +26,8 @@ header .nav {
       header .nav__items__item a {
         color: black;
         text-decoration: none; }
+      header .nav__items__item a:hover {
+        color: white; }
   header .nav .seperator {
     border-top: black 1px solid;
     width: 175px;
@@ -40,6 +44,9 @@ header #social a {
   color: black;
   text-decoration: none;
   padding: .5rem; }
+
+header #social a:hover {
+  color: white; }
 
 header #hours span {
   letter-spacing: .2rem;
@@ -58,7 +65,7 @@ header .navbar {
       position: fixed;
       top: 1%;
       left: 5%;
-      color: #79473e; }
+      color: #da560a; }
 
 @media (max-width: 420px) {
   header .nav {
@@ -4452,6 +4459,11 @@ body {
   background: black;
   display: flex; }
 
+input, button, select {
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  border-radius: 4px; }
+
 .reservation__page__container {
   margin: 0 auto;
   color: white;
@@ -4475,8 +4487,13 @@ body {
         height: 250px;
         width: auto;
         background-size: cover; } }
+    @media (max-width: 800px) and (min-width: 421px) {
+      .reservation__page__container .image__container {
+        height: 500px;
+        width: auto;
+        background-size: cover; } }
   .reservation__page__container .form__container {
-    padding: 1rem; }
+    padding: 0 1rem 0 1rem; }
     .reservation__page__container .form__container form {
       display: flex;
       justify-content: center; }

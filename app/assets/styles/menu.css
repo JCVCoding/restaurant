@@ -80,6 +80,8 @@ header .nav {
     text-decoration: none;
     font: 2.5rem "Italiana", serif;
     letter-spacing: .2rem; }
+  header .nav__logo:hover {
+    color: white; }
   header .nav .logo__container {
     padding: 2rem 0 0 0; }
   header .nav__items {
@@ -93,6 +95,8 @@ header .nav {
       header .nav__items__item a {
         color: black;
         text-decoration: none; }
+      header .nav__items__item a:hover {
+        color: white; }
   header .nav .seperator {
     border-top: black 1px solid;
     width: 175px;
@@ -109,6 +113,9 @@ header #social a {
   color: black;
   text-decoration: none;
   padding: .5rem; }
+
+header #social a:hover {
+  color: white; }
 
 header #hours span {
   letter-spacing: .2rem;
@@ -127,7 +134,7 @@ header .navbar {
       position: fixed;
       top: 1%;
       left: 5%;
-      color: #79473e; }
+      color: #da560a; }
 
 @media (max-width: 420px) {
   header .nav {
@@ -4451,11 +4458,21 @@ readers do not read off random characters that represent icons */
 body {
   background: none; }
   body .reservation__container {
-    top: -88.6vh; }
-  @media (max-width: 420px) {
+    top: 10%;
+    position: fixed; }
+  @media (min-width: 801px) {
     body .reservation__container {
-      top: 10%;
-      padding: 4rem 0 4rem 0; } }
+      position: absolute;
+      left: 70%;
+      top: 5%; } }
+  @media (max-width: 500px) {
+    body .reservation__container {
+      position: relative;
+      top: 5%;
+      padding: 4rem 0 2rem 0; } }
+
+.nav .navbar .nav__expander.open {
+  color: #da560a; }
 
 .menu {
   width: 40vw;

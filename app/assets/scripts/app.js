@@ -3,6 +3,8 @@
 //variables
 const nav__close = document.querySelector(".nav__expander.close");
 const nav__open = document.querySelector(".nav__expander.open");
+const nav__open__about = document.querySelector(".nav__expander.open.x");
+const nav__open__about__i = document.querySelector(".fa.fa-chevron-right.fa-4x.x");
 const navbar = document.querySelector(".nav");
 
 //functions
@@ -88,4 +90,22 @@ if (window.matchMedia("(min-width: 421px)").matches) {
   reservationBtn.addEventListener("mouseleave", () => {
     reservationEffectOut();
   });
+}
+
+//about page minimize arrow
+const minimize = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    nav__open__about.style.left = "1%";
+    nav__open__about__i.style.fontSize = "2.5em";
+    nav__open__about.style.transition = "left .3s"
+  } else {
+    nav__open__about.style.left = "5%";
+    nav__open__about__i.style.fontSize = "4em";
+    nav__open__about.style.transition = "left .3s"
+  }
+}
+
+//call function
+window.onscroll = () => {
+  minimize();
 }

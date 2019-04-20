@@ -16,6 +16,12 @@ body {
     display: flex;
 }
 
+input, button, select {
+    font-family: inherit;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
 
 .reservation__page__container {
     margin: 0 auto;
@@ -46,10 +52,16 @@ body {
             width: auto;
             background-size: cover;
         }
+
+        @media(max-width: 800px) and (min-width: 421px) {
+            height: 500px;
+            width: auto;
+            background-size: cover;
+        }
     }
 
     .form__container {
-        padding: 1rem;
+        padding: 0 1rem 0 1rem;
         
         form {
             display: flex;
