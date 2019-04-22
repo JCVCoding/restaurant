@@ -4462,7 +4462,12 @@ body {
 input, button, select {
   font-family: inherit;
   border: 1px solid #cccccc;
-  border-radius: 4px; }
+  border-radius: 4px;
+  cursor: pointer; }
+
+button[type=submit] {
+  color: white;
+  background: black; }
 
 .reservation__page__container {
   margin: 0 auto;
@@ -4499,7 +4504,11 @@ input, button, select {
       justify-content: center; }
       @media (max-width: 420px) {
         .reservation__page__container .form__container form {
-          flex-direction: column; } }
+          flex-direction: row;
+          flex-wrap: wrap; }
+          .reservation__page__container .form__container form button[type=submit] {
+            height: 2rem;
+            font-size: 1rem; } }
     .reservation__page__container .form__container div {
       padding: .5rem; }
       @media (max-width: 420px) {
