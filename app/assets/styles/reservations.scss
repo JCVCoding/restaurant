@@ -20,6 +20,12 @@ input, button, select {
     font-family: inherit;
     border: 1px solid #cccccc;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit] {
+    color: white;
+    background: black;
 }
 
 
@@ -68,7 +74,12 @@ input, button, select {
             justify-content: center;
 
             @media (max-width: 420px) {
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
+                button[type=submit] {
+                    height: 2rem;
+                    font-size: 1rem;
+                }
             }
         }
 
