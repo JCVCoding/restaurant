@@ -4456,10 +4456,12 @@ readers do not read off random characters that represent icons */
   font-weight: 900; }
 
 body {
-  background: none; }
+  background: black; }
   body .reservation__container {
     top: 10%;
     position: fixed; }
+  body .reservation__container__button {
+    border: 1px solid white; }
   @media (min-width: 801px) {
     body .reservation__container {
       position: absolute;
@@ -4477,7 +4479,8 @@ body {
 .menu {
   width: 40vw;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: white; }
   .menu__container {
     display: flex;
     flex-direction: column;

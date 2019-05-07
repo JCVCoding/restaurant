@@ -4473,8 +4473,7 @@ body {
     align-items: center;
     padding: 1rem; }
     .about__owner .img__container--owner {
-      padding: 1rem;
-      border: 1px solid white; }
+      padding: 1rem; }
       .about__owner .img__container--owner img {
         height: 300px; }
   .about__chef {
@@ -4482,8 +4481,7 @@ body {
     flex-direction: row-reverse;
     padding: 1rem; }
     .about__chef .img__container--chef {
-      padding: 1rem;
-      border: 1px solid white; }
+      padding: 1rem; }
       .about__chef .img__container--chef img {
         height: 400px; }
 

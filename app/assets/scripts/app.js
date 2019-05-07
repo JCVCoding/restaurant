@@ -76,7 +76,7 @@ const reservationEffectIn = () => {
 
 const reservationEffectOut = () => {
   reservationBtn.style.backgroundColor = "black";
-  reservationBtn.style.border = "solid black 1px";
+  reservationBtn.style.border = "solid white 1px";
   reservationBtn.style.color = "white";
   reservationBtn.style.transition = "background-color 1s, color 1s";
 }
