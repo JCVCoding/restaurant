@@ -12,11 +12,16 @@ $navBar: #746b65;
 @import "scss/solid.scss";
 
 body {
-    background: none;
+    background: black;
+    
 
     .reservation__container {
         top: 10%;
         position: fixed;
+    }
+
+    .reservation__container__button {
+        border: 1px solid white;
     }
 
     @media(min-width: 801px) {
@@ -50,6 +55,7 @@ body {
     width: 40vw;
     text-align: center;
     margin: 0 auto;
+    color: white;
     
     &__container {
         display: flex;
